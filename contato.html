@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Emporium - Contato</title>
+    <link rel="stylesheet" href="style.css">    /* ...existing code... */
+</head>
+<body class="light">
+    <header>
+        <h1 id="tituloLogo">Green Emporium</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="produtos.html">Loja de Produtos</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="carrinho.html">Tarefas</a></li>
+            </ul>
+        </nav>
+        <button id="tema">trocar tema</button>
+    </header>
+
+    <main>
+        <h2>Formulário de Contato</h2>
+        <form action="#" method="post" class="form-contato">
+            <div class="form-group">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" required />
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" required />
+            </div>
+
+            <div class="form-group">
+                <label for="assunto">Assunto</label>
+                <input type="text" id="assunto" name="assunto" required />
+            </div>
+
+            <div class="form-group">
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+            </div>
+
+            <fieldset>
+                <legend>Gênero:</legend>
+                <label><input type="radio" name="genero" value="masculino" /> Masculino</label>
+                <label><input type="radio" name="genero" value="feminino" /> Feminino</label>
+                <label><input type="radio" name="genero" value="outro" /> Outro</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferências de Contato:</legend>
+                <label><input type="checkbox" name="preferencia" value="email" /> Desejo receber notificações por e-mail</label>
+                <label><input type="checkbox" name="preferencia" value="sms" /> Desejo receber notificações por SMS</label>
+                <label><input type="checkbox" name="preferencia" value="telefone" /> Desejo ser contatado por telefone</label>
+            </fieldset>
+
+            <div class="form-group">
+                <label for="servico">Escolha de Serviço:</label>
+                <select id="servico" name="servico" required>
+                    <option value="">Selecione</option>
+                    <option value="suporte">Suporte Técnico</option>
+                    <option value="reclamacao">Reclamações</option>
+                    <option value="sugestao">Sugestões</option>
+                    <option value="elogio">Elogios</option>
+                    <option value="outro">Outro</option>
+                </select>
+            </div>
+
+            <div class="button-group">
+                <button type="reset" class="btn limpar">Limpar</button>
+                <button type="submit" class="btn enviar">Enviar</button>
+            </div>
+        </form>
+    </main>
+
+
+
+
+    <section class="ContainerPesquisa" id="todo-app">
+      <h2>Adicione os produtos Aqui</h2>
+        <div class="todo-form">
+            <input type="text" id="item-input" placeholder="Adicione um item..." aria-label="Novo item" />
+            <button id="adicionar-btn">Adicionar</button>
+        </div>
+            <div id="feedback" aria-live="polite" class="feedback" hidden></div>
+            <ul id="itens-lista" class="itens-lista" aria-label="Lista de itens"></ul>  
+    </section>
+    <div>
+
+
+
+        
+    <footer id="contato" class="linkdecontato">
+        <a href="https://instagram.com/carlos_josuee_" class="fab fa-instagram" target="_blank"> Instagram</a>
+        <a href="https://github.com/Cjsend" class="fab fa-github" target="_blank"> GitHub</a>
+        <a href="https://www.linkedin.com/in/carlos-josu%C3%A9-493b2735a/" class="fab fa-linkedin" target="_blank"> LinkedIn</a>
+    </footer>
+<script src="botao.js" defer></script>
+<script src="script.js" defer></script>
+</body>
+</html>

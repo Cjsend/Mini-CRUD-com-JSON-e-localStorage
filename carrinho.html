@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Emporium - Carrinho</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light">
+    <header>
+        <h1 id="tituloLogo">Green Emporium</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="produtos.html">Loja de Produtos</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+            </ul>
+        </nav>
+        <button id="tema">trocar tema</button>
+    </header>
+        <main>
+            <h2>Tarefas</h2>
+            <form action="#" method="post">
+                <section class="ContainerPesquisa" id="todo-app">
+                    <h2>Adicione as tarefas de higiene</h2>
+                            <div class="todo-form">
+                                <input type="text" id="item-input" placeholder="Adicione um item..." aria-label="Novo item" />
+                                <button id="adicionar-btn">Adicionar</button>
+                            </div>
+                    <div id="feedback" aria-live="polite" class="feedback" hidden></div>
+                    <ul id="itens-lista" class="itens-lista" aria-label="Lista de itens"></ul>  
+                </section>
+            </form>
+        </main>
+        <script src="botao.js" defer></script>
+        <script src="script.js" defer></script>
+    </body>
+</html>
